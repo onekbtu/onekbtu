@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:alpine
+    volumes:
+      - ./db:/var/lib/postgresql/data:rw
+    ports:
+      - 5432:5432

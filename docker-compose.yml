@@ -7,3 +7,14 @@ services:
       - ./db:/var/lib/postgresql/data:rw
     ports:
       - 5432:5432
+
+  phoenix:
+    build: ./
+    command:
+      - ./run.sh
+    volumes:
+      - ./:/app:rw
+    ports:
+      - 4000:4000
+    depends_on:
+      - db

@@ -71,5 +71,5 @@ config :onekbtu, Onekbtu.Repo,
   username: "postgres",
   password: "postgres",
   database: "onekbtu_dev",
-  hostname: "0.0.0.0",
+  hostname: "db",
   pool_size: 10

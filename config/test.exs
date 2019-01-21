@@ -14,5 +14,5 @@ config :onekbtu, Onekbtu.Repo,
   username: "postgres",
   password: "postgres",
   database: "onekbtu_test",
-  hostname: "localhost",
+  hostname: "db",
   pool: Ecto.Adapters.SQL.Sandbox
